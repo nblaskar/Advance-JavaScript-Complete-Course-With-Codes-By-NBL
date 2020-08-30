@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>
+</head>
+    
+<body>
+   <h1 id="myid1">
+       <!--This is Comment-->
+      <span>Learning JavaScript</span>
+      <em>Programming</em> <!--Comment--> 
+    </h1>
+   <p id="myid2">I am Para</p>
+   <script>
+       /*
+       //access
+       var result1=document.getElementById("myid1");
+       console.log(result1.lastChild.previousSibling);
+       console.log(result1.lastChild.previousElementSibling);
+       console.log(result1.lastElementChild.previousElementSibling);
+ */
+       
+       //Display
+       var result2=document.getElementById("myid1");
+       document.write(result2.lastChild.previousSibling.textContent+"<br>");       
+       document.write(result2.lastChild.previousElementSibling.textContent+"<br>");
+       document.write(result2.lastElementChild.previousElementSibling.textContent+"<br>");
+       /* 
+      //Manipulate
+      var result3=document.getElementById("myid1");
+      result3.lastChild.previousElementSibling.textContent=" DOM";
+      
+     
+
+      var result4=document.getElementById("myid1");
+      result4.lastElementChild.previousElementSibling.textContent="DOM Tree";
+      */
+
+   </script>
+    
+</body>
+</html>

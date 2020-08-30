@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>  
+    
+</head>    
+<body>
+    <h1>Key Event</h1> 
+   Name <input type="text" id="mytxt">   
+
+    <script>
+        var txt=document.getElementById("mytxt");
+        function ke(e){
+            console.log(e.type+' '+e.keyCode + ' ' +e.key);
+        }
+       
+        txt.addEventListener("keydown",ke,false);
+        txt.addEventListener("keypress",ke,false);
+        txt.addEventListener("keyup",ke,false);
+
+      
+        
+    </script>
+</body>
+</html>

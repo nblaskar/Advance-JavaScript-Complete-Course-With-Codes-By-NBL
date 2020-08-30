@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">   
+    <title>Tree</title>
+</head>
+<body>
+   <h1 id="myid" class="myclass">Learning JavaScript <!--This is Comment--></h1>
+   <p id="myid1">I am Paragraph</p>
+
+   <script>
+     //get first attribute name of h1
+       var result1=document.getElementById("myid");
+       document.write(result1.attributes[0].name+"<br>");
+
+       //get first attribute value of h1
+       var result2=document.getElementById("myid");
+       document.write(result2.attributes[0].value+"<br>");
+
+       //get all attributes with value of h1
+       var result3=document.getElementById("myid");
+       document.write(result3.attributes[0].name+"=");
+       document.write(result3.attributes[0].value+"<br>");
+       document.write(result3.attributes[1].name+"=");
+       document.write(result3.attributes[1].value+"<br>");
+
+       //use of length property
+       var result4=document.getElementById("myid");
+       document.write(result4.attributes.length+"<br>");
+
+       //use of For Loop
+       var result5=document.getElementById("myid");
+       for(let i=0; i<result5.attributes.length; i++){
+           document.write(result5.attributes[i].name+"=");
+           document.write(result5.attributes[i].value+"<br>");
+
+       }
+
+       //To change the value of attribute
+       var result6=document.getElementById("myid");
+       result6.attributes[1].value="newclass";
+       document.write(result6.attributes[1].value+"<br>");
+
+       
+
+
+
+
+   </script>
+    
+</body>
+</html>

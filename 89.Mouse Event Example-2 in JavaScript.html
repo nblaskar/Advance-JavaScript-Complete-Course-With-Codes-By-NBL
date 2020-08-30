@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>  
+    
+</head>    
+<body>
+    <div id="one" style="width: 200px; height: 200px; background-color: red;">      
+        <div id="two" style="width: 100px; height: 100px; background-color:black;">       
+        </div> 
+    </div>
+    <script>
+        function div1(e){
+            console.log(e.type);
+            e.stopPropagation();
+        }
+        function div2(e){
+            console.log(e.type);
+            e.stopPropagation();
+        }
+        var divOne=document.getElementById("one");
+        var divTwo=document.getElementById("two");
+
+        divTwo.addEventListener("mousedown", div2, false);
+        divOne.addEventListener("mousedown", div1, false);
+      
+        
+    </script>
+</body>
+</html>

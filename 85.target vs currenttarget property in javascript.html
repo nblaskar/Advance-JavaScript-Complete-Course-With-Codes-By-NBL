@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>  
+    <style >
+          #one{
+    width: 600px;
+    height: 600px;
+    background-color: yellow;
+}
+#two{
+    width: 450px;
+    height: 450px;
+    background-color: green;
+}
+#three{
+    width: 300px;
+    height: 300px;
+    background-color:orange;
+}
+#four{
+    width: 150px;
+    height: 150px;
+    background-color:pink;
+}
+    </style>
+</head>    
+<body>
+<h1>Dom Event Flow or Propagation</h1>
+<div id="one" data-name="1" >1
+      <div id="two" data-name="2">2
+            <div id="three" data-name="3">3
+                  <div id="four" data-name="4">4
+                  </div>
+            </div>
+      </div>
+</div>
+ <script>
+       //Bubble Phase   
+         document.getElementById("one").addEventListener("click", function(e) {
+         console.log("1");
+         console.log('Target='+ e.target.dataset.name);
+         console.log('Currentarget='+ e.currentTarget.dataset.name);
+         },false);
+         
+         document.getElementById("two").addEventListener("click", function(e) {
+         console.log("2");
+         console.log('Target='+ e.target.dataset.name);
+         console.log('Currentarget='+ e.currentTarget.dataset.name);
+         },false);
+         document.getElementById("three").addEventListener("click", function(e) {
+         console.log("3");
+         console.log('Target='+ e.target.dataset.name);
+         console.log('Currentarget='+ e.currentTarget.dataset.name);
+         },false);
+         document.getElementById("four").addEventListener("click", function(e) {
+         console.log("4");
+         console.log('Target='+ e.target.dataset.name);
+         console.log('Currentarget='+ e.currentTarget.dataset.name);
+         },false);
+   
+ </script>
+
+  
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>
+</head>
+    
+<body>
+   <div id="myid">
+      <h1>Learning JavaScript</h1>
+      <h1>i am h1</h1>
+   </div>
+   <script>
+      //Create Empty Document Fragment
+      var df=document.createDocumentFragment();
+
+      //Create New H3 Element
+      var hNode=document.createElement("h3");
+
+       //Create New P Element
+       var pNode=document.createElement("p");
+
+       //Text for New H3 and P
+       hNode.textContent="H3 from NBL";
+       pNode.textContent="P from NBL";
+
+       //Append H3 and P Element to DF
+       df.appendChild(hNode);
+       df.appendChild(pNode);
+
+       //Append DF to Div
+       var targetNode=document.getElementById("myid");
+       targetNode.appendChild(df);
+       console.log(df);
+
+   </script>
+    
+</body>
+</html>

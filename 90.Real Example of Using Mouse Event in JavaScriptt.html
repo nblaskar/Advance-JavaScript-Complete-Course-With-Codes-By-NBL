@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>  
+    
+</head>    
+<body>
+    <h1>Example of Mouse event</h1> 
+    Name <input type="text" id="mytxt">
+
+    <script>
+        var txt=document.getElementById("mytxt");
+        function changeOrangeColor(){
+            txt.style.backgroundColor="orange";
+            txt.setAttribute("value","jjj");
+          
+        }
+        function changeWhiteColor(){
+            txt.style.backgroundColor="white";
+            txt.setAttribute("value","");
+        }
+
+        txt.addEventListener("mouseover", changeOrangeColor, false);
+        txt.addEventListener("mouseout", changeWhiteColor, false);
+      
+        
+    </script>
+</body>
+</html>

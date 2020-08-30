@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>  
+    <link rel="stylesheet" href="css/style.css"> 
+</head>    
+<body>
+ <h1>Dom Event Flow or Propagation</h1>
+ <div id="one">1
+   <div id="two">2
+     <div id="three">3
+       <div id="four">4
+       </div>
+     </div>
+   </div>
+ </div>
+
+ <script>
+   /*
+   
+   //Bubble Phase   
+   document.getElementById("one").addEventListener("click", function() {console.log("1");},false);
+   document.getElementById("two").addEventListener("click", function() {console.log("2");},false);
+   document.getElementById("three").addEventListener("click", function() {console.log("3");},false);
+   document.getElementById("four").addEventListener("click", function() {console.log("4");},false);
+*/
+
+  //capture Phase   
+  document.getElementById("one").addEventListener("click", function() {console.log("1");},true);
+   document.getElementById("two").addEventListener("click", function() {console.log("2");},true);
+   document.getElementById("three").addEventListener("click", function() {console.log("3");},true);
+   document.getElementById("four").addEventListener("click", function() {console.log("4");},true); 
+
+ </script>
+
+  
+</body>
+</html>

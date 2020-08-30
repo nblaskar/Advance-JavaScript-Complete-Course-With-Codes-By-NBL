@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">   
+    <title>Tree</title>
+</head>
+<body>
+   <h1>Learning JavaScript</h1>
+   <h1 class="js pro">Web Development</h1>
+   <h2>Now</h2>
+   <p class="js">JavaScript</p>
+   <p class="pro">Programming</p>
+   <div id="show">
+       <p>1st p  inside div</p>
+       <p class="js">2nd p  inside div</p>
+   </div>
+   <p id="show1">I am Para</p>
+   <h3 id="show1">I am H3</h3>
+
+   
+   <script>
+       //querySelector()
+       //(1)Element Selector
+       var result1=document.querySelector("p");
+       document.write(result1);
+       console.log(result1);
+
+       document.write("<br>");
+       document.write("<br>");
+
+       var result1=document.querySelector("p,h1");
+       document.write(result1);
+       console.log(result1);
+
+       document.write("<br>");
+       document.write("<br>");
+
+        //(2)ID Selector
+        var result1=document.querySelector("#show1");
+       document.write(result1);
+       console.log(result1);
+
+       document.write("<br>");
+       document.write("<br>");
+
+       var result1=document.querySelector("#show,#show1");
+       document.write(result1);
+       console.log(result1);
+
+       document.write("<br>");
+       document.write("<br>");
+
+       //(3)Class Selector
+       var result1=document.querySelector(".js");
+       document.write(result1);
+       console.log(result1);
+
+       document.write("<br>");
+       document.write("<br>");
+
+       var result1=document.querySelector(".js,.pro");
+       document.write(result1);
+       console.log(result1);
+
+       document.write("<br>");
+       document.write("<br>");
+     
+
+
+
+   </script>
+    
+</body>
+</html>

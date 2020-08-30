@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>  
+    
+</head>    
+<body>
+    <div id="mydiv" style="width: 200px; height: 200px; background-color: burlywood;">
+        <a href="https://www.google.com" id="mylink">Click tto Go</a>
+    </div>
+    <script>
+        /*
+        //stop default behabiour
+        function stopLink(e){
+            e.preventDefault();
+        }
+        var mylink=document.getElementById("mylink");
+        mylink.addEventListener("click", stopLink,false);
+        */
+
+        //stop default behabiour and propagation
+        function stopLink(e){
+            e.preventDefault();
+            e.stopPropagation();
+        }
+        function div(e){
+            this.style.backgroundColor="orange";
+        }
+
+        var mylink=document.getElementById("mylink");
+        mylink.addEventListener("click", stopLink,false);
+
+        var mydiv=document.getElementById("mydiv");
+        mydiv.addEventListener("click", div,false);
+
+
+    </script>
+</body>
+</html>

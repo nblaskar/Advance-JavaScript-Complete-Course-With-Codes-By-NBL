@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>   
+</head>
+    
+<body>
+  <table border="1" id="mytab">
+   <caption>My Table Caption</caption>
+   <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Course</th>
+      </tr>
+    </thead>
+    <tbody id="mytbody">
+      <tr>
+        <td>11</td>
+        <td>Rahul</td>
+        <td>JavaScript</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>Sonam</td>
+        <td>PHP</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>55</td>
+        <td>Rohan</td>
+        <td>JSP</td>
+      </tr>
+    </tfoot>
+  </table>
+  <script>
+    var tbody=document.getElementById("mytbody");
+    /*
+    //to get the collection pof rows
+    var ro=tbody.rows;
+    console.log(ro);
+
+    //to get the particular rows
+    var ro=tbody.rows;
+    console.log(ro[1]);
+
+    //to print the datas of particular rows
+    var ro=tbody.rows;
+    document.write(ro[1].innerHTML);
+
+    //to change the datas of particular rows
+    var ro=tbody.rows;
+    ro[1].innerHTML="<td>1</td><td>2</td><td>3</td>";
+
+    
+    //row insertion
+    var ro=tbody.insertRow(-1);
+    ro.insertCell().textContent="new";
+    */
+    //row deletion
+    tbody.deleteRow(1);
+
+    
+
+    
+
+  
+    
+
+  </script>
+
+    
+</body>
+</html>

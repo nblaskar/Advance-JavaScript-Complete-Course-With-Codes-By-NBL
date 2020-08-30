@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>   
+</head>
+    
+<body>
+  <table border="1" id="mytab">
+   <!-- <caption>My Table Caption</caption>-->
+   <caption>My Table Caption</caption>
+   <!-- <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Course</th>
+      </tr>
+    </thead>-->
+    <tbody>
+      <tr>
+        <td>11</td>
+        <td>Rahul</td>
+        <td>JavaScript</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>Sonam</td>
+        <td>PHP</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>55</td>
+        <td>Rohan</td>
+        <td>JSP</td>
+      </tr>
+    </tfoot>
+  </table>
+  <script>
+    var tableElement=document.getElementById("mytab");
+   
+    //To check tFoot is exist or not
+    var result=tableElement.createTFoot();
+    console.log(result);
+
+    //To create a new thead when no caption exist
+    var tfut=tableElement.createTFoot();
+    tfut.innerHTML="<tr><td>1</td><td>2</td><td>3</td></tr>";
+    console.log(tfut);
+
+
+  
+    //To delete a caption
+    tableElement.deleteTFoot();
+    
+
+  </script>
+
+    
+</body>
+</html>

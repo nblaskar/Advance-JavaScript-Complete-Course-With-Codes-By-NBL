@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>   
+</head>
+    
+<body>
+  <table border="1" id="mytab">
+   <caption>My Table Caption</caption>
+   <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Course</th>
+      </tr>
+    </thead>
+    <tbody id="mytbody">
+      <tr>
+        <td>11</td>
+        <td>Rahul</td>
+        <td>JavaScript</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>Sonam</td>
+        <td id="mytd">PHP</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>55</td>
+        <td>Rohan</td>
+        <td>JSP</td>
+      </tr>
+    </tfoot>
+  </table>
+  <script>
+    //target the tble
+    var tableElement=document.getElementById("mytab");
+    //target all rows of the table
+    var allRows=tableElement.rows;
+    /*
+
+
+    //get the no of cells
+    console.log(allRows[0].cells.length);
+    
+
+    //accss the particular row and cess
+    console.log(allRows[0].cells[0]);
+    
+
+    //accss the  2nd row and 2nd cess
+    console.log(allRows[1].cells[1]);
+    
+
+    //accss the  2nd row and 1st cess by item(index) method
+    console.log(allRows[1].cells.item(0));
+
+    
+
+    //accss the  particular cell by cell id
+    console.log(allRows[2].cells.namedItem("mytd"));
+    
+
+    //get the content of the perticular cel of rows
+    console.log(allRows[2].cells[1].innerHTML);
+
+    
+
+    //to change the content of the perticular cel of rows
+    allRows[2].cells[1].innerHTML="NBL new";
+
+    
+
+    //Create a new empty cell at the perticular position
+    var newCell=allRows[0].insertCell(3);
+    console.log(newCell);
+
+    
+
+    //Insert the data to a new empty cell at the perticular position
+    var newCell=allRows[0].insertCell(3);
+    newCell.textContent="New Cell";
+    console.log(newCell);
+    
+    
+
+    //Insert Multiple Cell
+    var newCell1=allRows[0].insertCell(3);
+    newCell1.textContent="New Cell1";
+    var newCell2=allRows[1].insertCell(3);
+    newCell2.textContent="New Cell2";
+  
+
+    //delete a cell
+    allRows[0].deleteCell(0);
+    
+
+    //get rowIndex
+    var rI=document.getElementById("mytab").tFoot.rows;
+    console.log(rI[0].rowIndex);
+*/
+
+    //get sectionRowIndex
+    var tbody=document.getElementById("mytbody").rows;
+
+    console.log(tbody[0].rowIndex);
+    console.log(tbody[0].sectionRowIndex);
+
+  
+
+    
+
+    
+
+  
+    
+
+  </script>
+
+    
+</body>
+</html>

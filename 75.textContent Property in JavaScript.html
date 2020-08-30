@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>   
+</head>
+    
+<body>
+  <p id="myp">This is <span>Para</span><em>graph</em></p>
+  <script>
+    var pr=document.getElementById("myp");
+    console.log(pr);
+    //get text content
+    console.log(pr.textContent);
+    //get text content
+    pr.textContent="Hello World";
+    console.log(pr);
+
+    pr.textContent="<h1>Hello World</h1>";
+    console.log(pr);
+  </script>
+  
+</body>
+</html>

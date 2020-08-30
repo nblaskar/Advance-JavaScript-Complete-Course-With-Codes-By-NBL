@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>
+</head>
+    
+<body>
+   <div>
+      <h3>JS Framework</h3>
+      <ul id="myul">
+         <li>Jquery</li>
+         <li id="myang">Angular JS</li>
+         <li>React JS</li>
+         <li id="myd3">D3 JS</li>
+      </ul>
+      <ul>
+         <li id="myc">C Programming</li>
+         <li>Java Programming</li>
+      </ul>
+   </div>
+   <script>
+      //move item of same list
+       var parentNode=document.getElementById("myul");
+       var refNode=document.getElementById("myang");
+       var moveLastNode=document.getElementById("myd3");
+       parentNode.insertBefore(moveLastNode,refNode);
+       //move item of another list
+       var moveOtherListNode=document.getElementById("myc");
+       parentNode.insertBefore(moveOtherListNode,refNode);
+       console.log(parentNode);
+
+
+   
+   </script>
+    
+</body>
+</html>

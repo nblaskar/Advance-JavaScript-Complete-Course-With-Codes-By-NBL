@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>
+</head>
+    
+<body>
+   <h1 id="myid1">
+       <!--This is Comment-->
+      <span>Learning JavaScript</span>
+      <em>Programming</em>    
+    </h1>
+   <p id="myid2">I am Para</p>
+   <script>
+       /*
+      //Length
+      //length of childNodes of h1
+      var result1=document.getElementById("myid1");
+      var len1=result1.childNodes.length;
+      document.write(len1+"<br>");
+      console.log(len1);
+      console.log(result1.childNodes);
+
+      //length of chilren of h1
+      var result2=document.getElementById("myid1");
+      var len2=result2.children.length;
+      document.write(len2+"<br>");
+      console.log(len2);
+      console.log(result2.children);
+      
+      //Loop
+      //Nodes acces by index number pf childNodes or chhildren
+      var result3=document.getElementById("myid1");
+      console.log(result3.childNodes[1]);
+      console.log(result3.children[1]);
+     
+      //all Nodes acces by index number of childNodes with for loop
+      var result4=document.getElementById("myid1");
+      var cnlen=result4.childNodes.length;
+      for(let i=0;i<cnlen; i++){
+          console.log(result4.childNodes[i].nodeName);
+      }
+      
+
+      //all Nodes acces by index number of chhildren with for loop
+      var result5=document.getElementById("myid1");
+      var clen=result5.children.length;
+      for(let i=0;i<clen; i++){
+          console.log(result5.children[i]);
+      }
+       
+
+       //display
+       var result6=document.getElementById("myid1");
+       document.write(result6.childNodes[1].textContent+"<br>");
+       document.write(result6.children[0].textContent+"<br>");
+       */
+       //access
+       var result7=document.getElementById("myid1");
+      result7.childNodes[0].textContent="DOM";
+      result7.children[0].textContent="DOM";
+       
+
+
+
+
+     
+   </script>
+    
+</body>
+</html>

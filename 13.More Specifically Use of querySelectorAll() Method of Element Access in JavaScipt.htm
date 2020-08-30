@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">   
+    <title>Tree</title>
+</head>
+<body>
+   <h1>Learning JavaScript</h1>
+   <h1 class="js pro">Web Development</h1>
+   <h2>Now</h2>
+   <p class="js">JavaScript</p>
+   <p class="pro">Programming</p>
+   <div id="show">
+       <p>1st p  inside div</p>
+       <p class="js">2nd p  
+           <span class="myspan">inside</span>
+            div
+       </p>
+       <span class="myspan">Hello Span</span>
+   </div>
+   <p id="show1">I am Para</p>
+   <span id="show2" class="myspan">I am Span Section</span>
+
+   
+   <script>
+       //More Specific
+       var data=document.getElementById("show");
+       var result1=data.querySelectorAll("span.myspan");
+       document.write(result1);
+       console.log(result1);
+
+       document.write("<br>");
+       document.write("<br>");
+
+       var result2=document.getElementById("show").querySelectorAll("span.myspan");
+       document.write(result2);
+       console.log(result2);
+
+       document.write("<br>");
+       document.write("<br>");
+
+       var result3=document.querySelectorAll("#show > .js > span.myspan");
+       document.write(result3);
+       console.log(result3);
+
+
+
+
+
+
+
+   </script>
+    
+</body>
+</html>

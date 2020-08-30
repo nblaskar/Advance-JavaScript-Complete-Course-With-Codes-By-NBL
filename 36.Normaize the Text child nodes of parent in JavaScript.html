@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>
+</head>
+    
+<body>
+   <div id="myid">
+      <h1>Learning JavaScript</h1>
+      <h1>i am h1</h1>
+   </div>
+   <script>
+      //Targetting Element Where We will append New Node
+      var targetNode=document.getElementById("myid");
+      //Create and Append New Text
+      targetNode.appendChild(document.createTextNode("Hello"));
+      targetNode.appendChild(document.createTextNode("I Am"));
+      targetNode.appendChild(document.createTextNode("NBL"));
+      console.log(targetNode);
+      //normalize these nodes
+      targetNode.normalize();
+      console.log(targetNode.childNodes);
+
+
+   </script>
+    
+</body>
+</html>

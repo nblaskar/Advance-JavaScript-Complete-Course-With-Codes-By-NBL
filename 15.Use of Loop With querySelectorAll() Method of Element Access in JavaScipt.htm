@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">   
+    <title>Tree</title>
+</head>
+<body>
+   <h1>Learning JavaScript</h1>
+   <h1 class="js pro">Web Development</h1>
+   <p class="js">JavaScript</p>
+   <p class="pro">Programming</p>
+   <div id="show">
+       <p>1st p  inside div</p>
+       <p class="js">2nd p inside div</p>
+   </div>
+   <p id="show1">I am Para</p>
+   <span id="show2">I am Div</span>
+
+   
+   <script>
+       //More Specific
+       var result1=document.querySelectorAll(".js")[1];
+       document.write(result1+"<br>");
+       console.log(result1);
+
+       document.write("<br>");
+       document.write("<br>");
+
+       var data=document.querySelectorAll(".js");
+       var len=data.length;
+       for(let i=0;i<len;i++){
+        var result2=document.querySelectorAll(".js")[i];
+        document.write(result2+"<br>");
+        console.log(result2);
+       }
+
+       document.write("<br>");
+       document.write("<br>");
+
+       var data=document.querySelectorAll(".js");
+       var len=data.length;
+       for(let i=0;i<len;i++){
+        var result3=data[i];
+        document.write(result3+"<br>");
+        console.log(result3);
+       }
+
+       
+    
+
+
+
+
+
+
+
+   </script>
+    
+</body>
+</html>

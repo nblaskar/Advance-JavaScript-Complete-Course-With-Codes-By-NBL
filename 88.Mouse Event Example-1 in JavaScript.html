@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>  
+    
+</head>    
+<body>
+    <div id="one" style="width: 200px; height: 200px; background-color: red;">       
+    </div>
+    <script>
+        function show(e){
+            console.log(e.type);
+        }
+        var myDiv=document.getElementById("one");
+
+        myDiv.addEventListener("mousedown", show, false);
+        myDiv.addEventListener("mouseup", show, false);
+        myDiv.addEventListener("click", show, false);
+        myDiv.addEventListener("dblclick", show, false);
+        myDiv.addEventListener("mouseenter", show, false);
+        myDiv.addEventListener("mouseleave", show, false);
+        myDiv.addEventListener("mouseover", show, false);
+        myDiv.addEventListener("mouseout", show, false);
+        myDiv.addEventListener("mousemove", show, false);
+        myDiv.addEventListener("contextmenu", show, false);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">   
+    <title>Tree</title>
+</head>
+<body>
+   <h1 id="myid">Learning JavaScript <!--This is Comment--></h1>
+   <p id="myid1">I am Paragraph</p>
+
+   <script>
+       //Document
+       document.write("<br><br>------Document------<br><br>");
+       document.write(document.nodeName+"<br>");
+       document.write(document.nodeValue+"<br>");
+       document.write(document.nodeType+"<br>");
+       console.log(document.nodeName);
+       console.log(document.nodeValue);
+       console.log(document.nodeType);
+
+       //Element
+       document.write("<br><br>------Element------<br><br>");
+       var elm=document.getElementById("myid");
+       document.write(elm.nodeName+"<br>");
+       document.write(elm.nodeValue+"<br>");
+       document.write(elm.nodeType+"<br>");
+       console.log(elm.nodeName);
+       console.log(elm.nodeValue);
+       console.log(elm.nodeType);
+
+       //Text
+       document.write("<br><br>------Text------<br><br>");
+       var txt=document.getElementById("myid");
+       document.write(txt.firstChild.nodeName+"<br>");
+       document.write(txt.firstChild.nodeValue+"<br>");
+       document.write(txt.firstChild.nodeType+"<br>");
+       console.log(txt.firstChild.nodeName);
+       console.log(txt.firstChild.nodeValue);
+       console.log(txt.firstChild.nodeType);
+
+        //Comment
+        document.write("<br><br>------Comment------<br><br>");
+       var comt=document.getElementById("myid");
+       document.write(comt.firstChild.nextSibling.nodeName+"<br>");
+       document.write(comt.firstChild.nextSibling.nodeValue+"<br>");
+       document.write(comt.firstChild.nextSibling.nodeType+"<br>");
+       console.log(comt.firstChild.nextSibling.nodeName);
+       console.log(comt.firstChild.nextSibling.nodeValue);
+       console.log(comt.firstChild.nextSibling.nodeType);
+
+       //Accessing or Manipulating Process
+       //To Access Text
+       document.write("<br><br>------Text------<br><br>");
+       var txt=document.getElementById("myid");
+       document.write(txt.firstChild.nodeValue+"<br>");
+
+       //in single Line
+       document.write("<br><br>------Text------<br><br>");
+       var txt=document.getElementById("myid").firstChild.nodeValue;
+       document.write(txt+"<br>");
+
+       //changing text
+       document.write("<br><br>------Text------<br><br>");
+       var txt1=document.getElementById("myid").firstChild.nodeValue="This is New Value";
+       document.write(txt1+"<br>");
+
+       
+
+
+
+
+   </script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>  
+    
+</head>    
+<body>
+    <h1>Focus event</h1> 
+    <div style="width: 300px; height: 250px; background-color: cornsilk;">
+        Name <input type="text" id="mytxt">
+    </div>
+    
+
+    <script>
+        var txt=document.getElementById("mytxt");
+        function fe(e){
+            txt.style.backgroundColor="orange";
+        }
+        function be(e){
+            txt.style.backgroundColor="white";
+        }
+        /*
+        txt.addEventListener("focusin",fe,false);
+        txt.addEventListener("focusout",be,false);
+        */
+        txt.addEventListener("focusin",fe,false);
+        txt.addEventListener("focusout",be,false);
+      
+        
+    </script>
+</body>
+</html>

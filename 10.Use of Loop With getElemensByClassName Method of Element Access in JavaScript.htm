@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">   
+    <title>Tree</title>
+</head>
+<body>
+   <h1>Learning JavaScript</h1>
+   <h1 class="js pro">Web Development</h1>
+   <h2>Now</h2>
+   <p class="js">JavaScript</p>
+   <p class="pro">Programming</p>
+   <div id="show">
+       <p>1st p  inside div</p>
+       <p class="js">2nd p  inside div</p>
+   </div>
+
+   
+   <script>
+       //More Specific
+       var result1=document.getElementsByClassName("js")[1];
+       document.write(result1);
+       console.log(result1);
+
+       document.write("<br>");
+
+       var data=document.getElementsByClassName("js");
+       var len=data.length;
+       for(let i=0;i<len;i++){
+           var result2=document.getElementsByClassName("js")[i];
+           document.write(result2+"<br>");
+           console.log(result2);
+       }
+
+
+
+   </script>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>  
+    
+</head>    
+<body>
+    <h1>Text Event</h1> 
+   Name <input type="text" id="mytxt">   
+
+    <script>
+        var txt=document.getElementById("mytxt");
+        function te(e){
+            console.log(e.type+' '+e.data );
+        }
+       
+        txt.addEventListener("textInput",te,false);
+
+
+      
+        
+    </script>
+</body>
+</html>

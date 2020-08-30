@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>
+    <style>
+      .myclass1{
+        background-color: blue;
+      }
+      .myclass2{
+        background-color: red;
+        color: black;
+      }
+    </style>
+</head>
+    
+<body>
+   
+  <p id="myp" class="myclass1 myclass2 myclass3" style="color:green;">Paragraph</p>
+    <script>
+      /*
+      var pr=document.getElementById("myp");
+      var elementClass=pr.classList;
+      console.log(elementClass);
+      */
+
+      var pr=document.getElementById("myp");
+      var elementClass=pr.classList;
+      console.log(elementClass[0]);
+      console.log(elementClass[2]);
+      console.log(elementClass[4]);
+
+
+      
+
+ 
+   
+   </script>
+    
+</body>
+</html>

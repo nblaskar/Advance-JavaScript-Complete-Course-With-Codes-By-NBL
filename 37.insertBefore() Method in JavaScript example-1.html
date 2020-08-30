@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>
+</head>
+    
+<body>
+   <div>
+      <h3>JS Framework</h3>
+      <ul id="myul">
+         <li>Jquery</li>
+         <li id="myang">Angular JS</li>
+         <li>React JS</li>
+         <li id="myd3">D3 JS</li>
+      </ul>
+   </div>
+   <script>
+      //Access the parent Node
+      var parentNode=document.getElementById("myul");
+
+      //Create New Li Element
+      var nLNode=document.createElement("li");
+
+      //Add Text to New Li Element
+      nLNode.textContent="Backbone JS";
+
+      //Accessing Reference Node
+      var refNode=document.getElementById("myang");
+
+      //insert New Element
+      parentNode.insertBefore(nLNode,refNode);
+     // parentNode.insertBefore(nLNode,null);
+      console.log(parentNode)
+
+   
+   </script>
+    
+</body>
+</html>

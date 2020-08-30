@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>
+</head>
+    
+<body>
+   
+   <ul id="myul">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+   </ul>
+   <div id="mydiv">
+
+   </div>
+   <script>
+  var ul=document.getElementById("myul");
+  var duplicateNode=ul.cloneNode(true);
+  var div=document.getElementById("mydiv");
+  div.appendChild(duplicateNode);
+  console.log(div);
+   
+
+   
+
+
+   
+   </script>
+    
+</body>
+</html>

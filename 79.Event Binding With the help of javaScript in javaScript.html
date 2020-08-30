@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>   
+</head>    
+<body>
+  <h1>Event Handling</h1>
+  <button id="mybtn">Click Me</button>
+  <script>
+    /*
+    //set the onclick event with the help of javscript
+    var btn=document.getElementById("mybtn");
+    btn.onclick=function(){
+      alert("Button Clicked");
+    };
+    //set the onclick event with the help of javscript
+    document.getElementById("mybtn").onclick=function(){ alert("Button Clicked");};
+    */
+    //set the onclick event by making separate haandler function
+    function disp(){
+      alert("Button Clicked");
+    }
+    document.getElementById("mybtn").onclick=disp;
+    
+
+
+
+
+
+
+  </script>
+  
+</body>
+</html>

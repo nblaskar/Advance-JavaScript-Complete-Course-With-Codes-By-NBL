@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>
+    <style>
+      .myclass1{
+        font-size: 70px;
+        font-style: italic;
+      }
+    </style>
+</head>
+    
+<body>
+   
+  <p id="myp" class="myclass1" style="color:green;">Paragraph</p>
+    <script>
+      var pr=document.getElementById("myp");
+      var allCSSProp=window.getComputedStyle(pr);
+
+      /*
+      //process-1
+      console.log(allCSSProp);
+
+      //process-2
+      
+      console.log(allCSSProp.fontSize);
+      console.log(allCSSProp.fontStyle);
+      */
+      
+      //process-3
+      var cs=pr.style;      
+      console.log(cs.cssText);
+
+
+
+      
+
+ 
+     
+
+
+
+      
+
+ 
+   
+   </script>
+    
+</body>
+</html>

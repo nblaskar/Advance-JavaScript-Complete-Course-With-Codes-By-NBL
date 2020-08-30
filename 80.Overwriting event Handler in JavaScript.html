@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>   
+</head>    
+<body>
+  <h1>OverWriting Event Handling</h1>
+  <button id="mybtn">Click Me</button>
+  <script>
+    function disp1(){
+      alert("Button Clicked 1");
+    }
+    function disp2(){
+      alert("Button Clicked 2");
+    }
+    document.getElementById("mybtn").onclick=disp2;
+    document.getElementById("mybtn").onclick=disp1;
+    
+    
+
+
+
+
+
+
+  </script>
+  
+</body>
+</html>

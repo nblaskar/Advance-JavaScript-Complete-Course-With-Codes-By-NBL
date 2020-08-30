@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>   
+</head>    
+<body>
+  <h1>Add Event Listener</h1>
+  <button id="mybtn">Click Me</button>
+  <script>
+    /*
+    //use of this method
+    var btn=document.getElementById("mybtn");
+    btn.addEventListener("click", function(){alert("btn Clicked");});
+    
+    //use of this method with external hander
+    function show(){
+      alert("btn Clicked");
+    }
+    var btn=document.getElementById("mybtn");
+    btn.addEventListener("click", show);
+    
+    //use of this method with multiple handler
+    function disp1(){
+      alert("btn Clicked1");
+    }
+    function disp2(){
+      alert("btn Clicked2");
+    }
+    document.getElementById("mybtn").addEventListener("click", disp1);
+    document.getElementById("mybtn").addEventListener("click", disp2);
+    */
+    //use of this method with multiple handler and different event
+    function disp1(){
+      alert("btn Clicked1");
+    }
+    function disp2(){
+      alert("btn Clicked2");
+    }
+    document.getElementById("mybtn").addEventListener("click", disp1);
+    document.getElementById("mybtn").addEventListener("mouseover", disp2);
+   
+
+
+
+
+
+
+  </script>
+  
+</body>
+</html>

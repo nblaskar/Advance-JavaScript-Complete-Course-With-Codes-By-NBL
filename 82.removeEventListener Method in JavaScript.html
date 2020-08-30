@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>   
+</head>    
+<body>
+  <h1>Add Event Listener</h1>
+  <button id="mybtn">Click Me</button>
+  <script>
+
+    function disp(){
+      alert("btn Clicked");
+    }
+  
+    var btn=document.getElementById("mybtn");
+    btn.addEventListener("click", disp, false);
+    btn.addEventListener("click", disp, true);
+
+
+    btn.removeEventListener("click", disp, true);
+
+    
+
+
+
+
+  </script>
+  
+</body>
+</html>

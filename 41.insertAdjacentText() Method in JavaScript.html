@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>
+</head>
+    
+<body>
+   <div id="mydiv">
+      <h1 id="myh1">Heading 1</h1>
+      <h2 id="myh2">Heading 2</h2>
+      <h3 id="myh3">Heding 3</h3>   
+   </div>
+   <script>
+     var targetElement=document.getElementById("myh2");
+     var text="I Am NBL";
+     targetElement.insertAdjacentHTML('beforeend',text);
+     console.log(document.getElementById("mydiv"));
+
+
+   
+   </script>
+    
+</body>
+</html>

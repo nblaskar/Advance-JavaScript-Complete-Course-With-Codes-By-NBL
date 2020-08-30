@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>
+</head>
+    
+<body>
+   
+   <ul id="myul">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li id="item_3">Item 3</li>
+      <li>Item 4</li>
+   </ul>
+
+   <script>
+      /*
+  var parentNode=document.getElementById("myul");
+  var targetNode=document.getElementById("item_3");
+  var delNode=parentNode.removeChild(targetNode);
+  console.log(parentNode);
+  console.log(delNode);
+
+  
+
+  //process-1
+  var parentNode=document.getElementById("myul");
+  var delNode=parentNode.removeChild(parentNode.firstElementChild);
+  console.log(parentNode);
+  console.log(delNode);
+  
+
+  //process-2
+  var parentNode=document.getElementById("myul");
+  var delNode=parentNode.removeChild(parentNode.firstElementChild.nextElementSibling);
+  console.log(parentNode);
+  console.log(delNode);
+  
+
+
+  //process-2
+  var parentNode=document.getElementById("myul");
+  var delNode=parentNode.removeChild(parentNode.children[2]);
+  console.log(parentNode);
+  console.log(delNode); 
+  */
+
+  //process-2
+  var targetNode=document.getElementById("item_3");
+  var delNode=targetNode.parentNode.removeChild(targetNode);
+  console.log(delNode); 
+
+   
+
+
+   
+   </script>
+    
+</body>
+</html>

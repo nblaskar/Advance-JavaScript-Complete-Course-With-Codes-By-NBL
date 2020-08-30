@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>   
+</head>
+    
+<body>
+  <table border="1" id="mytab">
+   <caption>My Table Caption</caption>
+   <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Course</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>11</td>
+        <td>Rahul</td>
+        <td>JavaScript</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>Sonam</td>
+        <td>PHP</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>55</td>
+        <td>Rohan</td>
+        <td>JSP</td>
+      </tr>
+    </tfoot>
+  </table>
+  <script>
+    var tableElement=document.getElementById("mytab");
+    /*
+    //Inset a new row at the end of the table
+    var newRow=tableElement.insertRow(-1);
+    console.log(newRow);
+        //enter contents
+        newRow.insertCell(0).textContent="New Data";
+
+    
+
+    //Insert a new row at the specified position by row index no
+    var newRow=tableElement.insertRow(1);
+    newRow.insertCell(0).textContent="New Data";
+    console.log(newRow)
+
+    
+
+    //delete a row from last of the table
+    tableElement.deleteRow(-1);
+    */
+
+    //delete a particular row specified by row index no
+    tableElement.deleteRow(0);
+
+    
+
+  
+    
+
+  </script>
+
+    
+</body>
+</html>

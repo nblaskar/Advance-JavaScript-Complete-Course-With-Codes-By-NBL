@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>   
+</head>
+    
+<body>
+  <table border="1" id="mytab">
+    <caption>My Table Caption</caption>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Course</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>11</td>
+        <td>Rahul</td>
+        <td>JavaScript</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>Sonam</td>
+        <td>PHP</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>55</td>
+        <td>Rohan</td>
+        <td>JSP</td>
+      </tr>
+    </tfoot>
+  </table>
+  <script>
+    var tableElement=document.getElementById("mytab");
+    /*
+    //1)caption Property
+      //to get csption element
+    var tcap=tableElement.caption;
+    console.log(tcap);
+        //get content of caption
+    console.log(tcap.innerHTML);
+        //change caption value
+    tcap.innerHTML="New Caption";
+    
+
+    //1)tHead Property
+      //to get csption element
+      var thed=tableElement.tHead;
+    console.log(thed);
+        //get content of iHead Elemet
+     document.write(thed.innerHTML);
+        //change caption value
+     thed.innerHTML="<tr><th>Ides</th><th>nam</th><th>syll</th></tr>";
+     
+
+    //1)tFoot Property
+      //to get tFoot element
+      var tfut=tableElement.tFoot;
+    console.log(tfut);
+        //get content of iHead Elemet
+     document.write(tfut.innerHTML);
+        //change caption value
+     tfut.innerHTML="<tr><td>100</td><td>Dell</td><td>Intel</td></tr>";
+     
+
+//1)tBodies Property
+  //to get tFoot element
+  var bodi=tableElement.tBodies;
+console.log(bodi[0]);
+    //get content of iHead Elemet
+  document.write(bodi[0].innerHTML);
+
+  */
+
+//1)rows Property
+  //to get rows element
+  var ro=tableElement.rows;
+console.log(ro[0]);
+        //get content of row Elemet
+        document.write(ro[0].innerHTML);
+                //change row Value
+     ro[0].innerHTML="<tr><td>100</td><td>Dell</td><td>Intel</td></tr>";
+    
+
+
+
+
+
+  </script>
+
+    
+</body>
+</html>
