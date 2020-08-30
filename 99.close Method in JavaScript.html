@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>  
+    
+</head>    
+<body>
+    <h1>Window Open</h1>     
+    <button id="mybtn">Close The Window</button>
+    <script>
+        var newWindow=window.open("","_blank","height=400,width=400");
+        newWindow.document.write("This is New Window");
+        function btnClose(){
+            newWindow.document.close();
+            newWindow.close();
+            this.textContent="Window Closed";
+
+        }
+        document.getElementById("mybtn").addEventListener("click",btnClose);
+       
+       
+
+
+    </script>
+</body>
+</html>

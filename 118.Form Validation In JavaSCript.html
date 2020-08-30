@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>  
+    
+</head>    
+<body>
+    <form action="" name="myform">
+        Username:<input type="text" name="u_field"> <small id="u_small"></small> <br>
+        <input type="submit" name="m_sbtn" value="Submit">
+    </form>
+
+    <script>
+        function validatedata(){
+            var ptrn=/^([^0-9\W]*)$/;
+            if(ptrn.test(document.myform.u_field.value)){
+                document.getElementById("u_small").textContent='user is valid';
+                document.getElementById("u_small").style.color='green';
+            }else{
+                document.getElementById("u_small").textContent='user is invalid';
+                document.getElementById("u_small").style.color='red';
+            }
+        }
+        document.myform.u_field.addEventListener("keyup",validatedata);
+       
+    </script>
+
+</body>
+</html>

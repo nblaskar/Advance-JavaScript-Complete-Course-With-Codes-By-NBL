@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h1>Spread operator used in Object</h1>
+    <script>
+      /*
+      //process-1
+      var a = { courseName: "JS", programming: "Dev" };
+      var b = { ...a };
+      a.courseName = "PHP";
+      console.log(a);
+      console.log(b);
+      
+      //process-2
+      var a = { courseName: "JS", programming: "Dev" };
+      var b = { ...a, duration: "6Months" };
+      a.courseName = "PHP";
+      console.log(a);
+      console.log(b);
+        */
+      //process-3
+      var a = { courseName: "JS", programming: "Dev" };
+      var b = { duration: "6Months" };
+      var c = { ...a, ...b };
+      console.log(c);
+    </script>
+  </body>
+</html>

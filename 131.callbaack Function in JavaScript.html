@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>  
+    
+</head>    
+<body>
+    <h1>Callback Function</h1>
+    <script>
+        /*
+      //callback function with no parameter
+      function data(){
+          console.log("I am Data Function");
+      }
+      function mainData(callback){
+          callback();
+      }
+      mainData(data);
+
+      
+      //callback function with Argument
+      function data(a){
+          console.log("I am Data Function"+a);
+      }
+      function mainData(callback){
+          var a=101;
+          callback(a);
+      }
+      mainData(data);
+
+      
+      //callback function with Argument in different way
+      function data(a){
+          console.log("I am Data Function"+a);
+      }
+      function mainData(a,callback){
+          callback(a);
+      }
+      mainData(102,data);
+      
+      //write the above code as follows
+     
+      function mainData(callback){
+          var a=101;
+          callback(a);
+      }
+      mainData(function data(a){
+          console.log("I am Data Function"+a);
+      });
+      
+      //Callback Function as anonymus function
+     
+      function mainData(callback){
+          var a=101;
+          callback(a);
+      }
+      mainData(function(a){
+          console.log("I am Data Function"+a);
+      });
+      
+      //Callback Function as arrow function
+     
+      function mainData(callback){
+          var a=101;
+          callback(a);
+      }
+      mainData(a=>{
+          console.log("I am Data Function"+a);
+      });
+       
+      //synchronous callback function
+      function data(){
+          console.log("I am Data Function");
+      }
+      function mainData(callback){
+          callback();
+      }
+      mainData(data);
+      console.log("End");
+        */
+      //asynchronous callback function
+      setTimeout(function data(){
+          console.log("I am data Function");
+      },5000);
+      console.log("End");
+
+        
+    </script>
+
+</body>
+</html>

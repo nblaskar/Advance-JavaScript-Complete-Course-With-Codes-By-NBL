@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>  
+    
+</head>    
+<body>
+    <h1>map Method</h1>
+    <script>
+        /*
+        //working of map function
+        var arr=[10,20,30,40,50];
+        var newArr=arr.map(function(value,i,ar){
+            console.log(value);
+            console.log(i);
+            console.log(ar);
+        });
+        console.log(arr);
+        
+
+        //manipulate array data using map function
+        var arr=[10,20,30,40,50];
+        var newArr=arr.map(function(value){
+            value++;
+            return value;
+        });        
+        console.log(arr);
+        console.log(newArr);
+         
+
+        //Real Example of using map function
+        var arr=[
+            {price:"100",prodeuc:"Mobile"},
+            {price:"200",prodeuc:"Laptop"},
+            {price:"300",prodeuc:"PC"}
+        ];
+        var newArr=arr.map(function(value){
+            return value.price;
+        });
+        console.log(newArr);
+         */
+
+        //Real Example of using map function in arrow
+        var arr=[
+            {price:"100",prodeuc:"Mobile"},
+            {price:"200",prodeuc:"Laptop"},
+            {price:"300",prodeuc:"PC"}
+        ];
+        var newArr=arr.map(value=>value.price);
+        console.log(newArr);
+        
+    </script>
+
+</body>
+</html>

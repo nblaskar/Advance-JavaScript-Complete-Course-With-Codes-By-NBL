@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>  
+    
+</head>    
+<body>
+    <h1>Cookier</h1>
+    <form action="" name="myform">
+        Name: <input type="text" name="name"><br>
+        Email: <input type="email" name="email"><br>
+        Lang: <input type="text" name="lang"><br>
+        <input type="button" value="Set Cookies" name="set" onclick="setCookies()">
+        <input type="button" value="Get Cookies" name="get" onclick="getCookies()">
+    </form>
+    <script>
+        function setCookies(){
+            document.cookie="name="+document.myform.name.value+"; max-age=60*60*24*10";
+            document.cookie="email="+document.myform.email.value+"; max-age=60*60*24*10";
+            document.cookie="lang="+document.myform.lang.value+"; max-age=60*60*24*10";
+            alert(document.cookie);
+        }
+        function getCookies(){
+            var cookiesArray=document.cookie.split(";");
+            for(let i=0;i<cookiesArray.length;i++){
+                var arrayValue=cookiesArray[i].split("=")
+                if(arrayValue[0].trim()=='name'){
+                    document.myform.name.value=arrayValue[1];
+                }
+                if(arrayValue[0].trim()=='email'){
+                    document.myform.email.value=arrayValue[1];
+                }
+                if(arrayValue[0].trim()=='lang'){
+                    document.myform.lang.value=arrayValue[1];
+                }
+            }
+        }
+        
+       
+
+
+    </script>
+
+</body>
+</html>

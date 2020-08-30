@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tree</title>
+  </head>
+  <body>
+    <h1>Array Destructuring</h1>
+    <script>
+      /*
+      //Process-1
+      var course = { courseName: "JS", language: "Pro", designation: "Dev" };
+      
+      //accessing in simple way
+      console.log(course.courseName);
+      console.log(course.language);
+      console.log(course.designation);
+      
+      //Process-2
+      var course = { courseName: "JS", language: "Pro", designation: "Dev" };
+      var { courseName, language, designation } = course;
+      console.log(courseName);
+      console.log(language);
+      console.log(designation);
+       
+      //Process-3
+      var course = { courseName: "JS", language: "Pro", designation: "Dev" };
+      var { courseName: cname, language: lang, designation: design } = course;
+      console.log(cname);
+      console.log(lang);
+      console.log(design);
+      
+      //Process-4
+      var course = { courseName: "JS", language: "Pro", designation: "Dev" };
+      var { courseName, language } = course;
+      console.log(courseName);
+      console.log(language);
+      */
+      //Process-5
+      var course = { courseName: "JS", language: "Pro", designation: "Dev" };
+      var { courseName, designation } = course;
+      console.log(courseName);
+      console.log(designation);
+    </script>
+  </body>
+</html>

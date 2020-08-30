@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>  
+    
+</head>    
+<body>
+    <h1>Window resizing</h1>    
+    <button type="button" id="openbtn">Open Window</button>
+    <button type="button" id="resizebtn">Resize Window</button>
+    <script>
+    var nWindow;
+    function openWin(){
+        nWindow=window.open("","_blank","height=300,width=300");
+        nWindow.document.write("New Window is This")
+    }
+    function resizeWin(){
+        nWindow.resizeTo(200,200);
+        nWindow.focus();
+    }
+    document.getElementById("openbtn").addEventListener("click",openWin);
+    document.getElementById("resizebtn").addEventListener("click",resizeWin);
+
+       
+
+
+    </script>
+</body>
+</html>

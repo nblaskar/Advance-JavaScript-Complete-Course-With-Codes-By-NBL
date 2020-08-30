@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>  
+    
+</head>    
+<body>
+    <h1>Window Moving</h1>    
+    <button type="button" id="openbtn">Open Window</button>
+    <button type="button" id="movebtn">Move Window</button>
+    <script>
+    var nWindow;
+    function openWin(){
+        nWindow=window.open("","nWindow","height=300,width=300");
+        nWindow.document.write("New Window is This")
+    }
+    function moveWin(){
+        nWindow.moveBy(200,200);
+        nWindow.focus();
+    }
+    document.getElementById("openbtn").addEventListener("click",openWin);
+    document.getElementById("movebtn").addEventListener("click",moveWin);
+
+       
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tree</title>
+  </head>
+  <body>
+    <h1>Nested Object Destructuring</h1>
+    <script>
+      var course = {
+        courseName: "JS",
+        language: "Pro",
+        designation: "Dev",
+        student: {
+          stu1: "Rahul",
+          stu2: "Sonam",
+        },
+      };
+
+      var {
+        courseName,
+        language,
+        designation,
+        student: { stu1, stu2 },
+      } = course;
+      console.log(courseName);
+      console.log(language);
+      console.log(designation);
+      console.log(stu1);
+      console.log(stu2);
+    </script>
+  </body>
+</html>

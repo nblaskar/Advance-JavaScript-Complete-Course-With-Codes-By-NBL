@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tree</title>
+  </head>
+  <body>
+    <h1>Destructuring During object Passing To a Function</h1>
+    <script>
+      var course = {
+        courseName: "JavaScript",
+        language: "Pro",
+        designation: "Dev",
+      };
+      function show({ courseName, language, designation }) {
+        console.log(courseName);
+        console.log(language);
+        console.log(designation);
+      }
+      show(course);
+    </script>
+  </body>
+</html>

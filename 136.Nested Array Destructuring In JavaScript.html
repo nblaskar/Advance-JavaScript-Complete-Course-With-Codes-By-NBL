@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>  
+    
+</head>    
+<body>
+    <h1>Nested array Destructing</h1>    
+    <script>
+         var a=["JS","pro","dev",["Rahul","Sonam"]];
+         //Simple Accessing
+         console.log(a[0]);
+         console.log(a[1]);
+         console.log(a[2]);
+         console.log(a[3][0]);
+         console.log(a[3][1]);
+         //by destructuring
+         var[courseName,language,designation,[stu1,stu2]]=a;
+         console.log(courseName);
+         console.log(language);
+         console.log(designation);
+         console.log(stu1);
+         console.log(stu2);
+
+        
+   
+        
+        
+
+
+        
+        
+    </script>
+
+</body>
+</html>

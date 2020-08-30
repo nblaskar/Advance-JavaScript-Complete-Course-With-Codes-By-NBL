@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>  
+    
+</head>    
+<body>
+    <div id="mydiv"></div>
+    <button type="button" id="mybtn">Clear Interval</button>
+    
+    <script>
+       
+        var intervalID= setInterval(()=>{
+            document.getElementById("mydiv").textContent +=" NBL ";
+        },2000);
+        function clrtime(){
+            clearInterval(intervalID);
+        }
+        document.getElementById("mybtn").addEventListener("click",clrtime);
+       
+ 
+ 
+    
+    
+
+
+    </script>
+</body>
+</html>

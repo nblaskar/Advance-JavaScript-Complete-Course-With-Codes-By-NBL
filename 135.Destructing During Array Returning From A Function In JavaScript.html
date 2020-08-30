@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Tree</title>  
+    
+</head>    
+<body>
+    <h1>Destructing During Array Returning From A Function In JavaScript</h1>
+    
+    <script>
+        /*
+        //Process-1
+        var arr=[10,20,30];
+        function show(data){
+            return data;
+        }
+        var x=show(arr);
+        //check output
+        console.log(x[0]);
+        console.log(x[1]);
+        console.log(x[2]);
+        //apply destruction
+        var[val1,val2,val3]=x;
+        console.log(val1);
+        console.log(val2);
+        console.log(val3);
+        */ 
+        //Process-2
+        var arr=[10,20,30];
+        function show(data){
+            return data;
+        }
+        
+        //apply destruction
+        var[val1,val2,val3]=show(arr);
+        console.log(val1);
+        console.log(val2);
+        console.log(val3);
+   
+        
+        
+
+
+        
+        
+    </script>
+
+</body>
+</html>
